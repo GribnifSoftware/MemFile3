@@ -1,0 +1,32 @@
+void reopen_file(void);
+int read_sector(void);
+int norm_bootsec(void);
+int read_bootsec( int drive, Bsec *boot );
+int make_form( OBJECT *tree, Rect tree_rect, int edit, int redraw );
+int write_one_sector( Bsec *boot, unsigned int sector, unsigned int drive,
+    char *buf );
+int read_bootsec( int drive, Bsec *boot );
+int read_one_sector( Bsec *boot, unsigned int sector, unsigned int drive,
+    char *buf );
+void read_error( long err );
+void write_error( long err );
+void open_error( char *ptr );
+int check_drv( int index );
+void cerror( char *msg, ... );
+void fromto( long p1, long p2 );
+void error( char *str );
+void reset_title(void);
+void draw_box( int *arr );
+void check( int *x, int *y, int x_max, int y_max );
+void to_hex( int i );
+void init_text(void);
+void put_str( int x, int y, unsigned char *s );
+void display(void);
+void goto_mem(void);
+void redo_addr( int y0, int y1 );
+void redo_text( int a, int b );
+void slider( char *ptr );
+int from_hex( char *ptr, unsigned long *num );
+void set_title( char *str );
+int do_file( int reset );
+void _set_clip(void);

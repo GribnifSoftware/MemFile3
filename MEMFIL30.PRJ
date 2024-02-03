@@ -1,0 +1,22 @@
+;>>>>>>> DEFAULT.PRJ for use with single module programs <<<<<<<<
+
+*                  ; name of executable program is topmost window
+
+=                  ; list of modules follows...
+
+lib\pCSTART.o          ; startup code
+lib\calwsave.s
+memfil3s.s
+lib\multevnt.s
+
+*                  ; compile topmost window
+
+pCFLTLIB.LIB       ; floating point library
+pCSTDLIB.LIB       ; standard library
+
+;TCEXTLIB.LIB       ; extended library
+pCTOSLIB.LIB       ; TOS library
+new_gem.LIB       ; AES and VDI library
+pCLNALIB.LIB       ; LINE-A library
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
